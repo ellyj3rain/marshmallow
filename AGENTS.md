@@ -1,6 +1,6 @@
-# Mousecat
+# Marshmallow
 
-Mousecat is a source-available MCP normalization plane. It gives AI coding hosts one server and one namespace for operator interaction, governed decision queues, live visualization, routed upstream access, credential references, skill frameworks, work permits, and tool-boundary control.
+Marshmallow is a source-available MCP normalization plane. It gives AI coding hosts one server and one namespace for operator interaction, governed decision queues, live visualization, routed upstream access, credential references, skill frameworks, work permits, and tool-boundary control.
 
 ## Operating Conventions
 
@@ -15,7 +15,7 @@ Mousecat is a source-available MCP normalization plane. It gives AI coding hosts
 - Never store raw secrets, cookies, private keys, Z-Library account state, IDE private state, runtime transcripts, or generated local databases in source.
 - Keep runtime exhaust under ignored local paths such as `.mousecat/`, `runtime/`, `traces/`, or `artifacts/local/`.
 - Append to `BATCH_LOG.md`, `DECISION_REGISTRY.md`, and `FINDINGS.md`; do not rewrite historical entries.
-- Treat Kohai as Mousecat's third numeric root version coordinate: `major.minor.kohai.patch-maturity`.
+- Treat Kohai as Marshmallow's third numeric root version coordinate: `major.minor.kohai.patch-maturity`.
 
 ## Verification
 
@@ -43,7 +43,7 @@ npm run hooks:check
 
 GitHub CI executes the same `npm run pr:ready` (with audit) through the `ci-verify` check on every push/PR. Pull requests also run chronology, PR-shape classifier, and documentation-consistency gates before review, and the outcome observer records read-only GitOps evidence as artifacts. Smoke scripts use `.github/mousecat.ci.config.json` so local ignored connectors do not affect public readiness. See the PR readiness section in README.md.
 
-Open Ground GitLab executes the same readiness surface through the root `.gitlab-ci.yml`. Public jobs require both `zero-local` and `open-ground` runner tags; they must not use a private-group runner. Jobs that execute Mousecat hygiene or PR-shape checks must install `git` inside the Node image because those checks inspect repository state.
+Open Ground GitLab executes the same readiness surface through the root `.gitlab-ci.yml`. Public jobs require both `zero-local` and `open-ground` runner tags; they must not use a private-group runner. Jobs that execute Marshmallow hygiene or PR-shape checks must install `git` inside the Node image because those checks inspect repository state.
 
 Targeted smoke commands remain available for local diagnosis.
 
@@ -57,13 +57,13 @@ The config is ignored local state; do not commit private Neo paths, raw discover
 
 ## Current First-Class Skills
 
-Mousecat must expose Crucible, Mass Assault, and Total Recall as callable atomic skills today.
+Marshmallow must expose Crucible, Mass Assault, and Total Recall as callable atomic skills today.
 
 ## Platform change authority
 
-Using Mousecat, invoking its skills, registering a project or presenting questions
-uses the existing shared platform contract. It does not authorize modifying Mousecat
+Using Marshmallow, invoking its skills, registering a project or presenting questions
+uses the existing shared platform contract. It does not authorize modifying Marshmallow
 source, shared layouts or skill semantics. Platform changes require an explicit
-human request to alter Mousecat. Within that scope, improvements belong in the
+human request to alter Marshmallow. Within that scope, improvements belong in the
 shared source-owned platform; consumer-specific behavior stays in declared data
 and project adapters.

@@ -1,6 +1,6 @@
-# Mousecat desktop
+# Marshmallow desktop
 
-The Windows desktop client opens the same personal Mousecat workspace available
+The Windows desktop client opens the same personal Marshmallow workspace available
 in the browser. Questions, plans, decisions and history belong to the shared
 local service. Agent connections and client windows can come and go without
 removing unanswered work. Project context comes through the existing project
@@ -17,7 +17,7 @@ powershell -NoProfile -File scripts/install-desktop.ps1
 ```
 
 The installer builds a self-contained executable, installs it for the current
-user, and adds **Mousecat** to the Desktop and Start menu. The SDK is needed to
+user, and adds **Marshmallow** to the Desktop and Start menu. The SDK is needed to
 build; the installed executable carries its .NET runtime. WebView2 remains an
 installed Windows dependency. No browser tab or terminal is needed to use it.
 

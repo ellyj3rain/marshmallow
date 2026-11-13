@@ -65,9 +65,17 @@ export function projectRootVersionToPackageVersion(rootVersion, options = {}) {
   const parsed = parseRootVersion(rootVersion);
   if (!parsed.ok) return { ok: false, error: parsed.violation };
   if (parsed.patch !== 0 && options.allowLossyPatchProjection !== true) {
+    if (parsed.maturity) {
+      // The root odometer remains four-coordinate. npm carries its nonzero
+      // patch in the existing single maturity's prerelease identifiers.
+      return {
+        ok: true,
+        version: `${parsed.major}.${parsed.minor}.${parsed.kohai}-${parsed.maturity}.patch.${parsed.patch}`,
+      };
+    }
     return {
       ok: false,
-      error: `root patch coordinate ${parsed.patch} cannot be losslessly projected to npm SemVer`,
+      error: `stable root patch coordinate ${parsed.patch} has no selected lossless npm SemVer projection`,
     };
   }
   const projection = {

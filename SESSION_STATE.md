@@ -1,10 +1,16 @@
-| Document | Mousecat Session State |
+| Document | Marshmallow Session State |
 |---|---|
-| Version | 2.2.0.0-alpha |
-| Timestamp | 2026-10-04 12:01 UTC / 05:01 PST |
-| Status | ACTIVE - A28 installed ownership integration verified; publication pending. |
+| Version | 2.2.0.1-alpha |
+| Timestamp | 2026-11-12 23:27 UTC / 15:27 PST |
+| Status | ACTIVE - public source identity and receiving record. |
 
 # Session State
+
+## Public identity correction — 2026-11-12 23:25 UTC / 15:25 PST
+
+The public source now names the original interaction application Marshmallow, with the separate former Marshmallow Commons product named Mousecat. Browser/desktop display names and new installer shortcuts follow that identity while package, protocol, stored-profile and assembly identifiers remain compatible. The installer distinguishes its exact native executable from the separate same-named Electron process. This in-place repair receives one patch credit, `2.2.0.0-alpha` → `2.2.0.1-alpha`; npm represents it losslessly as `2.2.0-alpha.patch.1`. No private unpublished batch identity is reused, and no additional feature-completion credit follows from the rename or publication.
+
+Source, focused contract and synthetic demo checks are recorded in the appended HOTFIX entry. Public repository receiving, protected checks and installed-host receiving retain their separate standing. Earlier A28 observations below retain their original source scope; this correction does not assert that private later development is published here.
 
 ## Current state
 

@@ -1,5 +1,5 @@
 {
-  "project": "Mousecat",
+  "project": "Marshmallow",
   "runtime": "node-esm",
   "mcp": {
     "transport": "streamable-http",

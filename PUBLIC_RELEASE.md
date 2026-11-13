@@ -1,6 +1,8 @@
-# Mousecat release readiness
+> Current identity: this is **Marshmallow**, the application formerly published as Mousecat. Its public source and issue links are [ellyj3rain/marshmallow](https://github.com/ellyj3rain/marshmallow). The distinct Mousecat control plane, formerly Marshmallow Commons, retains separate source and release receiving; its public source release is being prepared at the canonical `ellyj3rain/mousecat` repository. Historical copyright notices and compatibility identifiers remain unchanged.
 
-Version: 1.9.0.0-alpha. License: PolyForm Perimeter 1.0.0, source available.
+# Marshmallow release readiness
+
+Historical qualification cut: 1.9.0.0-alpha. License: PolyForm Perimeter 1.0.0, source available.
 
 The release contains the shared operator, SDK/MCP runtime, native client source,
 synthetic project demonstration and complete dependency notices. The normal
@@ -27,7 +29,7 @@ rescanned. Original provenance remains in the private repository.
 
 The original private repository retains twenty pull-request head refs to excluded
 history. Release preparation preserves it as a private archive and installs the
-sanitized history in a separate clean repository at the existing Mousecat URL.
+sanitized history in a separate clean repository at the existing Marshmallow URL.
 The fresh release clone's main and both retained PR heads passed the historical
 boundary and credential scans. Its A21.3 audit covered eighteen reachable commits
 and 387 blobs with zero excluded-input or credential findings. Excluded original

@@ -1,7 +1,7 @@
 {
   "name": "mousecat",
-  "version": "2.2.0-alpha",
-  "description": "A compact cross-harness MCP operator widget for normalized skill decisions and structured returns.",
+  "version": "2.2.0-alpha.patch.1",
+  "description": "Marshmallow: local operator interaction, project workboards, evidence and governed MCP routing.",
   "type": "module",
   "bin": {
     "mousecat": "./src/cli.mjs",
@@ -85,5 +85,13 @@
   },
   "devDependencies": {
     "playwright": "1.64.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ellyj3rain/marshmallow.git"
+  },
+  "homepage": "https://github.com/ellyj3rain/marshmallow#readme",
+  "bugs": {
+    "url": "https://github.com/ellyj3rain/marshmallow/issues"
   }
 }

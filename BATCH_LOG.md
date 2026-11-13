@@ -2647,3 +2647,16 @@ This receives the dependency through the existing public readiness and security 
 CodeQL Action 4.37.4 to 4.39.3 updates the existing hosted source scanner. Only the two CodeQL setup/analyze action references change in the workflow. Repository permissions and the scan target remain unchanged. Current main and this maintenance record are received before the required hosted checks determine readiness.
 
 This receives the dependency through the existing public readiness and security checks. The product scope and root odometer remain owned by the release; this supporting dependency record claims no separate feature completion or additional release credit.
+
+
+## [HOTFIX] 2026-11-12 23:25 UTC / 15:25 PST — Marshmallow public identity and installer coexistence
+
+*Scope and parent:* Correct the original interaction application's public identity to Marshmallow while the separate former Marshmallow Commons control plane becomes Mousecat. This is the bounded public identity/installer repair within the operator's full application separation; private development and already allocated A29–A32/A41 work keep their identities and obligations.
+
+*Changed behavior:* Public entry documentation and managed repository links identify the two applications distinctly. Browser and desktop labels, product metadata and new shortcuts name Marshmallow. The installer checks the exact original desktop executable path so a different Electron Mousecat process does not block it. Unknown process identity stays conservative. Existing package/bin/MCP/service/profile/AppUserModelID/assembly identifiers, original notices and historical records remain compatible. No old shortcut is removed by this change; cleanup must first establish its exact target.
+
+*Direct delivery dependency:* The owning four-coordinate odometer already permits patch credit, but its npm adapter rejected every nonzero patch. The bounded adapter now encodes an existing prerelease's patch as `major.minor.kohai-maturity.patch.N`. Zero-patch output and the explicit legacy lossy option are preserved; stable nonzero patches remain refused. This is an external-format implementation repair, not a new version policy or a tier promotion.
+
+*Credit owner and movement:* This HOTFIX owns one in-place PATCH: `2.2.0.0-alpha` → `2.2.0.1-alpha`, projected to npm `2.2.0-alpha.patch.1`. The projection repair, identity labels and source/PR publication do not receive separate ticks. No new numbered feature batch or private batch identity is allocated.
+
+*Evidence and receiving:* Documentation, governance and source checks pass. Four version cases, including the selected-coordinate projection coverage exercise zero/nonzero patches, explicit lossy compatibility, refusal and carry behavior. Four actual installer-predicate cases distinguish exact/case-equivalent native paths, the separate Electron path and unknown identity. Fourteen existing demo/description/installed-identity cases pass. An isolated synthetic CLI demo serves the Marshmallow title and wordmark without private configuration. Windows PowerShell parses the installer. These observations do not claim an actual installed-desktop update; the normal protected PR/CI and installed receiving remain separate.

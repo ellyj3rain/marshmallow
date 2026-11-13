@@ -24,8 +24,16 @@ if (-not $ConfigPath) {
 $ConfigPath = (Resolve-Path -LiteralPath $ConfigPath).Path
 $config = Get-Content -LiteralPath $ConfigPath -Raw | ConvertFrom-Json
 if ($config.state.enabled -ne $true) { throw 'The selected configuration must enable local state so questions survive restarts.' }
-$running = Get-Process -Name Mousecat -ErrorAction SilentlyContinue
-if ($running) { throw 'Close the Mousecat desktop window before updating it. The service and saved questions may remain open.' }
+$selectedDesktopExecutable = [IO.Path]::GetFullPath((Join-Path $binPath 'Mousecat.exe'))
+$running = @(Get-Process -Name Mousecat -ErrorAction SilentlyContinue | Where-Object {
+    # Mousecat's separate Electron app can share the historical executable name.
+    # An unavailable path stays conservative; a known different app does not block this update.
+    try { $candidateExecutable = $_.Path } catch { $candidateExecutable = $null }
+    (-not $candidateExecutable) -or [string]::Equals(
+        [IO.Path]::GetFullPath($candidateExecutable), $selectedDesktopExecutable,
+        [StringComparison]::OrdinalIgnoreCase)
+})
+if ($running) { throw 'Close the Marshmallow desktop window before updating it. The service and saved questions may remain open.' }
 & dotnet publish $projectPath -c Release -r win-x64 --self-contained true -o $binPath
 if ($LASTEXITCODE -ne 0) { throw 'Desktop build failed; shortcuts were not updated.' }
 @{RepositoryRoot=$RepositoryRoot;NodePath=$nodePath;ConfigPath=$ConfigPath;Port=$Port} |
@@ -33,11 +41,11 @@ if ($LASTEXITCODE -ne 0) { throw 'Desktop build failed; shortcuts were not updat
 $shell = New-Object -ComObject WScript.Shell
 $locations = @([Environment]::GetFolderPath('Desktop'), [Environment]::GetFolderPath('Programs'))
 foreach ($location in $locations) {
-    $shortcut = $shell.CreateShortcut((Join-Path $location 'Mousecat.lnk'))
+    $shortcut = $shell.CreateShortcut((Join-Path $location 'Marshmallow.lnk'))
     $shortcut.TargetPath = Join-Path $binPath 'Mousecat.exe'
     $shortcut.WorkingDirectory = $RepositoryRoot
-    $shortcut.Description = 'Mousecat - questions, plans and decision history'
+    $shortcut.Description = 'Marshmallow - questions, plans and decision history'
     $shortcut.Save()
 }
-Write-Output "Installed Mousecat desktop and Start menu shortcuts."
+Write-Output "Installed Marshmallow desktop and Start menu shortcuts."
 Write-Output (Join-Path $binPath 'Mousecat.exe')

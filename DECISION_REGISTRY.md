@@ -850,3 +850,12 @@ unavailable predecessor coverage. Independent `[REPO]` record maintenance uses
 complete actual current and predecessor file lists; disjoint files proceed in
 their own maintenance scope. Its owning classifier and focused controls share
 that repair. No product version or batch is added by this correction.
+
+
+## Public identity receiving | 2026-11-12 | Marshmallow and Mousecat
+
+The operator selected separate public projects for the interaction/workboard application and the control plane formerly called Marshmallow Commons. The interaction application is Marshmallow at `ellyj3rain/marshmallow`; the control plane is Mousecat at `ellyj3rain/mousecat`. Managed links are updated to these current destinations, with the indexed source history retained in the renamed Marshmallow repository.
+
+Both application projects retain PolyForm licensing; `LICENSE` remains the exact source for Marshmallow's existing Perimeter 1.0.0 terms. Current product/display and shortcut labels follow the selected identity. Existing package, binary, MCP, service, profile and assembly identifiers retain compatibility through this repair. The installer distinguishes the original desktop executable from the separate Electron process by its exact path.
+
+The public identity HOTFIX owns the single patch recorded in BATCH_LOG. Its npm version projection is an external-format repair under the existing odometer. Numbered private development and its installed application remain independently maintained. This record receives the operator's settled identity and hosting decisions; it allocates no new numbered decision or feature batch.
