@@ -2660,3 +2660,8 @@ This receives the dependency through the existing public readiness and security 
 *Credit owner and movement:* This HOTFIX owns one in-place PATCH: `2.2.0.0-alpha` → `2.2.0.1-alpha`, projected to npm `2.2.0-alpha.patch.1`. The projection repair, identity labels and source/PR publication do not receive separate ticks. No new numbered feature batch or private batch identity is allocated.
 
 *Evidence and receiving:* Documentation, governance and source checks pass. Four version cases, including the selected-coordinate projection coverage exercise zero/nonzero patches, explicit lossy compatibility, refusal and carry behavior. Four actual installer-predicate cases distinguish exact/case-equivalent native paths, the separate Electron path and unknown identity. Fourteen existing demo/description/installed-identity cases pass. An isolated synthetic CLI demo serves the Marshmallow title and wordmark without private configuration. Windows PowerShell parses the installer. These observations do not claim an actual installed-desktop update; the normal protected PR/CI and installed receiving remain separate.
+
+
+## [DOCS] | 2026-11-12 | Published Mousecat counterpart links
+
+The independently reviewed Mousecat control-plane source is now published at `ellyj3rain/mousecat`. Current identity and release navigation now link that actual repository. Marshmallow retains its indexed source/history at `ellyj3rain/marshmallow`; each project keeps its own source and release. This completes the link receiving after the identity HOTFIX and adds no product or version credit.

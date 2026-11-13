@@ -1,4 +1,4 @@
-> Current identity: this is **Marshmallow**, the application formerly published as Mousecat. Its public source and issue links are [ellyj3rain/marshmallow](https://github.com/ellyj3rain/marshmallow). The distinct Mousecat control plane, formerly Marshmallow Commons, retains separate source and release receiving; its public source release is being prepared at the canonical `ellyj3rain/mousecat` repository. Historical copyright notices and compatibility identifiers remain unchanged.
+> Current identity: this is **Marshmallow**, the application formerly published as Mousecat. Its public source and issue links are [ellyj3rain/marshmallow](https://github.com/ellyj3rain/marshmallow). The distinct Mousecat control plane, formerly Marshmallow Commons, retains separate source and release receiving; its reviewed public source is available at [ellyj3rain/mousecat](https://github.com/ellyj3rain/mousecat). Historical copyright notices and compatibility identifiers remain unchanged.
 
 # Marshmallow release readiness
 

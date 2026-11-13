@@ -13,7 +13,7 @@ The separate Mousecat project is the desktop development and identity control pl
 | Application | Public repository | Responsibility |
 |---|---|---|
 | Marshmallow | [ellyj3rain/marshmallow](https://github.com/ellyj3rain/marshmallow) | Operator interaction, project workboard and graphs, evidence, decisions and observation. |
-| Mousecat | Source release in preparation; canonical repository `ellyj3rain/mousecat` | Project and fleet status, model identity and governed development operations. |
+| Mousecat | [ellyj3rain/mousecat](https://github.com/ellyj3rain/mousecat) | Project and fleet status, model identity and governed development operations. |
 
 Existing `mousecat` package and CLI names, `mousecat.*` MCP tools, service identifiers, desktop assembly IDs and stored profiles remain compatibility identities. They do not identify the separate Mousecat control plane. Existing links maintained by this project now use the Marshmallow repository. Historical release names retain their original provenance.
 
