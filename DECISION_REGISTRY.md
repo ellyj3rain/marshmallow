@@ -859,3 +859,8 @@ The operator selected separate public projects for the interaction/workboard app
 Both application projects retain PolyForm licensing; `LICENSE` remains the exact source for Marshmallow's existing Perimeter 1.0.0 terms. Current product/display and shortcut labels follow the selected identity. Existing package, binary, MCP, service, profile and assembly identifiers retain compatibility through this repair. The installer distinguishes the original desktop executable from the separate Electron process by its exact path.
 
 The public identity HOTFIX owns the single patch recorded in BATCH_LOG. Its npm version projection is an external-format repair under the existing odometer. Numbered private development and its installed application remain independently maintained. This record receives the operator's settled identity and hosting decisions; it allocates no new numbered decision or feature batch.
+
+
+### Counterpart source publication receiving | 2026-11-12
+
+The Mousecat repository selected in the public identity decision now contains its independently reviewed control-plane source: [initial source cut](https://github.com/ellyj3rain/mousecat/commit/f83d8a42340712b6199e7792a95d1a03080e6ee3). Current Marshmallow identity and release navigation link that published repository. This is the source/evidence receiving for the preceding identity decision.
