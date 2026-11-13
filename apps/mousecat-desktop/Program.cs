@@ -30,7 +30,7 @@ internal sealed class DesktopWindow : Form
     private static extern int DwmSetWindowAttribute(IntPtr window, int attribute, ref int value, int size);
     private readonly WebView2 web = new() { Dock = DockStyle.Fill, Visible = false, DefaultBackgroundColor = Color.FromArgb(22, 18, 13) };
     private readonly Label message = new() { Dock = DockStyle.Fill, TextAlign = ContentAlignment.MiddleCenter,
-        Padding = new Padding(40), Text = "Opening Mousecat…" };
+        Padding = new Padding(40), Text = "Opening Marshmallow…" };
     private readonly Button retry = new() { Text = "Retry", Dock = DockStyle.Bottom, Height = 44, Visible = false };
     private readonly System.Windows.Forms.Timer activationTimer = new() { Interval = 200 };
     private readonly System.Windows.Forms.Timer appearanceTimer = new() { Interval = 1000 };
@@ -48,7 +48,7 @@ internal sealed class DesktopWindow : Form
     internal DesktopWindow(EventWaitHandle activation)
     {
         activate = activation;
-        Text = "Mousecat";
+        Text = "Marshmallow";
         MinimumSize = new Size(640, 480);
         Size = new Size(1280, 850);
         StartPosition = FormStartPosition.CenterScreen;
@@ -120,8 +120,8 @@ internal sealed class DesktopWindow : Form
                 ".mousecat", "user-service.json");
             // An HTTP listener alone cannot establish which saved workspace it uses.
             if (!File.Exists(recordPath) || !settings.MatchesServiceRecord(await File.ReadAllTextAsync(recordPath, lifetime.Token)))
-                throw new IOException("A Mousecat service is running, but it does not match this desktop's persistent workspace. "
-                    + "Restart the matching Mousecat service or update the desktop configuration. No saved questions were changed.");
+                throw new IOException("A Marshmallow service is running, but it does not match this desktop's persistent workspace. "
+                    + "Restart the matching Marshmallow service or update the desktop configuration. No saved questions were changed.");
             return true;
         }
         catch (Exception error) when (error is HttpRequestException or TaskCanceledException) { return false; }
@@ -133,7 +133,7 @@ internal sealed class DesktopWindow : Form
         connecting = true;
         message.Visible = true;
         retry.Visible = false;
-        message.Text = "Opening Mousecat…";
+        message.Text = "Opening Marshmallow…";
         try
         {
             settings = DesktopSettings.Load(Path.Combine(DesktopSettings.DataRoot, "desktop.json"));
@@ -147,7 +147,7 @@ internal sealed class DesktopWindow : Form
                 foreach (var argument in new[] { Path.Combine(settings.RepositoryRoot, "src", "cli.mjs"),
                     "--config", settings.ConfigPath, "service", "start", "--port", settings.Port.ToString() })
                     start.ArgumentList.Add(argument);
-                using var process = Process.Start(start) ?? throw new IOException("Could not start Mousecat.");
+                using var process = Process.Start(start) ?? throw new IOException("Could not start Marshmallow.");
                 // Drain both pipes. Service output can contain private local configuration paths.
                 var stdout = process.StandardOutput.ReadToEndAsync(lifetime.Token);
                 var stderr = process.StandardError.ReadToEndAsync(lifetime.Token);
@@ -156,7 +156,7 @@ internal sealed class DesktopWindow : Form
                 try { await process.WaitForExitAsync(deadline.Token); }
                 catch (OperationCanceledException) { if (!process.HasExited) process.Kill(); throw; }
                 await Task.WhenAll(stdout, stderr);
-                if (!await Healthy()) throw new IOException("The Mousecat service did not become available. Your saved questions have not been changed.");
+                if (!await Healthy()) throw new IOException("The Marshmallow service did not become available. Your saved questions have not been changed.");
             }
             var environment = await CoreWebView2Environment.CreateAsync(null,
                 Path.Combine(DesktopSettings.DataRoot, "WebView"));
@@ -179,7 +179,7 @@ internal sealed class DesktopWindow : Form
         catch (Exception error)
         {
             if (IsDisposed || lifetime.IsCancellationRequested) return;
-            message.Text = "Mousecat could not open.\n\n" + error.Message;
+            message.Text = "Marshmallow could not open.\n\n" + error.Message;
             retry.Visible = true;
         }
         finally { connecting = false; }

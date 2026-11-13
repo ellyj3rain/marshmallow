@@ -1,21 +1,34 @@
-| Document | Mousecat README |
+| Document | Marshmallow README |
 |---|---|
-| Version | 2.2.0.0-alpha |
-| Timestamp | 2026-10-04 12:01 UTC / 05:01 PST |
+| Version | 2.2.0.1-alpha |
+| Timestamp | 2026-11-12 23:27 UTC / 15:27 PST |
 | Status | ACTIVE - participant entry point. |
 
-# Mousecat
+# Marshmallow
 
-Mousecat gives AI coding hosts and their operator one local workspace for questions,
+Marshmallow is the interaction, observation and project-workboard application previously published here as **Mousecat**. This repository retains that application's source and history under its current name.
+
+The separate Mousecat project is the desktop development and identity control plane formerly called **Marshmallow Commons**. The two applications have distinct source, responsibilities and releases.
+
+| Application | Public repository | Responsibility |
+|---|---|---|
+| Marshmallow | [ellyj3rain/marshmallow](https://github.com/ellyj3rain/marshmallow) | Operator interaction, project workboard and graphs, evidence, decisions and observation. |
+| Mousecat | Source release in preparation; canonical repository `ellyj3rain/mousecat` | Project and fleet status, model identity and governed development operations. |
+
+Existing `mousecat` package and CLI names, `mousecat.*` MCP tools, service identifiers, desktop assembly IDs and stored profiles remain compatibility identities. They do not identify the separate Mousecat control plane. Existing links maintained by this project now use the Marshmallow repository. Historical release names retain their original provenance.
+
+This public source cut remains the code and version represented in this repository. The identity correction does not import unreviewed private development or claim that another application is part of this source cut.
+
+Marshmallow gives AI coding hosts and their operator one local workspace for questions,
 project ideas, source evidence, decision history and live simulation feeds. Codex, Claude Code,
 Neo and other MCP clients can bring work into the same responsive surface and
 receive the operator's structured response. One loopback process serves the
 browser, Windows desktop and Streamable HTTP MCP endpoint. Optional project
 adapters and a native Unreal client preserve each producer's source authority.
 
-Mousecat is PolyForm Perimeter 1.0.0-licensed, GZDS-governed source-available bridge code. It does not ship private Neo tools. A local ignored config can point Mousecat at a private Neo MCP server, then Mousecat discovers tools dynamically and forwards permitted calls at runtime.
+Marshmallow is PolyForm Perimeter 1.0.0-licensed, GZDS-governed source-available bridge code. It does not ship private Neo tools. A local ignored config can point Marshmallow at a private Neo MCP server, then Marshmallow discovers tools dynamically and forwards permitted calls at runtime.
 
-Mousecat uses a Kohai-aware root odometer: `VERSION` is `major.minor.kohai.patch-maturity`, with npm package metadata projected to `major.minor.kohai-maturity` when the root patch coordinate is zero. Governance automation and release-discipline maturation move Kohai; runtime or public contract expansion moves minor.
+Marshmallow uses a Kohai-aware root odometer: `VERSION` is `major.minor.kohai.patch-maturity`. A zero patch retains the npm projection `major.minor.kohai-maturity`; a nonzero prerelease patch uses `major.minor.kohai-maturity.patch.N`, preserving all four root coordinates. Stable nonzero-patch projection remains unselected and is refused. The current in-place identity/installer repair moves patch once: `2.2.0.0-alpha` to `2.2.0.1-alpha`, with package version `2.2.0-alpha.patch.1`.
 
 ML reviews carry the caller's situation, model proposals, evidence and the effects
 of the human response. Recorded scene-preview data remains validated and retained
@@ -83,6 +96,10 @@ Details open on demand over the graph. Source and
 media references remain descriptive metadata; graph data supplies no executable
 links. The platform accepts up to 10,000 nodes, 30,000 relationships and 16 MiB.
 
+## Related development systems
+
+[Ground Zero](https://github.com/ellyj3rain/ground-zero) supplies development standards and reusable methods. [Illuci](https://github.com/ellyj3rain/illuci) is an independent agentic engine. Each project owns its source and releases; an actual integration retains its own configured interfaces and receiving evidence.
+
 ## Quick Start
 
 Install Node.js 20 or newer, clone this repository and install the pinned dependencies:
@@ -117,7 +134,7 @@ freshness and exact served interface files. Reload or reopen the installed clien
 and exercise the changed surface to complete delivery. Preview and CI receipts
 retain their separate purposes.
 
-Open **Mousecat** from the Desktop or Start menu. It shares questions and history
+Open **Marshmallow** from the Desktop or Start menu. It shares questions and history
 with the browser and starts the local service when needed. Unanswered work
 survives service restarts without requiring the originating agent to reconnect.
 Closing the desktop window leaves the service running. Browser access remains
@@ -172,11 +189,11 @@ node src/cli.mjs --config mousecat.config.json service start
 node src/cli.mjs --config mousecat.config.json service uninstall
 ```
 
-Windows uses a short LocalAppData launcher registered under the current-user Run key. Linux uses a user systemd unit, and macOS uses a LaunchAgent. Status validates the Mousecat snapshot schema rather than accepting any process that answers on the port.
+Windows uses a short LocalAppData launcher registered under the current-user Run key. Linux uses a user systemd unit, and macOS uses a LaunchAgent. Status validates the Marshmallow snapshot schema rather than accepting any process that answers on the port.
 
 ## PR Readiness
 
-Mousecat is AI-native and GZDS-governed. Contributions are expected to satisfy the public readiness surface before review.
+Marshmallow is AI-native and GZDS-governed. Contributions are expected to satisfy the public readiness surface before review.
 
 ```powershell
 npm run pr:ready
@@ -235,20 +252,20 @@ bounded commit-id aliases on provenance-bearing reported records; collisions
 remain ambiguous and never replace an exact original interaction identity.
 
 History persists in ignored local state independently of the short event log.
-Coverage includes retained Mousecat interactions and explicitly indexed files
+Coverage includes retained Marshmallow interactions and explicitly indexed files
 declared by registered project surfaces. Older external transcripts become
 searchable when registered and indexed. Missing and ambiguous references remain
 visible. Host-authored methods and findings retain proposed or reported standing;
 the original operator response remains the authority for a decision.
 
-Mousecat ships a generic operator-widget facade, normalized skill and asynchronous delegation adapters, one nonlinear cross-session graphical interaction surface, one shared loopback MCP/browser runtime, one native Unreal world runtime, and the validated contract foundation for project workbenches. Hosts can request arbitrary ordered items and options without inheriting native question limits, then await typed results while Mousecat preserves provenance, redaction, lineage, and operator-only response writes.
+Marshmallow ships a generic operator-widget facade, normalized skill and asynchronous delegation adapters, one nonlinear cross-session graphical interaction surface, one shared loopback MCP/browser runtime, one native Unreal world runtime, and the validated contract foundation for project workbenches. Hosts can request arbitrary ordered items and options without inheriting native question limits, then await typed results while Marshmallow preserves provenance, redaction, lineage, and operator-only response writes.
 
 ## Project Workbench Foundation
 
 The Project Workbench lets a host and operator inspect and author a project's
 meaningful objects without requiring the target application's normal UI.
 Conversation carries intent. A project adapter retains the project's own
-schemas and generation rules, while Mousecat binds the source revision,
+schemas and generation rules, while Marshmallow binds the source revision,
 operation effect, permission, representation, draft, and receipt.
 
 The first source boundary validates project-adapter descriptors, bounded
@@ -256,7 +273,7 @@ workbench sessions, and multi-view development representations. Each visual
 layer states whether it is a direct source fact, deterministic project
 projection, derived summary, illustration, or unresolved. Executable rendering
 code and secret-bearing adapter fields are rejected, and every declared write
-must name both its Mousecat permit and project-side authorization.
+must name both its Marshmallow permit and project-side authorization.
 
 Colonist Awareness is the proving adapter: an agent can search an exact saved
 planet, compose a connected starting region, show the landscape at the scales
@@ -276,21 +293,21 @@ contract direction is documented in
 
 `mousecat.skill(action=invoke)` is the first-class host path for the source-owned Recursive Deliberation Framework and runtime-registered operator-interaction frameworks. Recursive Deliberation contains Crucible, Total Recall, and Mass Assault as contextually routed skills, not a fixed pipeline. The calling host model or configured upstream selects each compatible handoff from live context; Neo is optional rather than the default ontology or visualizer.
 
-`mousecat.registry(action=register)` accepts declarative framework, skill, intake, and presentation descriptors under an operator-interaction permit. Registrations are namespace-owned and revisioned, survive ignored local-state restarts, and cannot replace source-owned ids or inject executable presentation code. Registered operator-interaction skills use the same mapped-seam widget and structured-return contract; upstream tool execution remains separately permit-gated through Mousecat's connector boundary.
+`mousecat.registry(action=register)` accepts declarative framework, skill, intake, and presentation descriptors under an operator-interaction permit. Registrations are namespace-owned and revisioned, survive ignored local-state restarts, and cannot replace source-owned ids or inject executable presentation code. Registered operator-interaction skills use the same mapped-seam widget and structured-return contract; upstream tool execution remains separately permit-gated through Marshmallow's connector boundary.
 
-The caller resumes or retries with the exact returned `continuation.arguments`, including its opaque capability token. Mousecat never reissues that capability from interaction identity alone. Answered and held responses carry source host, session, thread, chronology, and sequence lineage. The return contract explicitly sends Crucible back to interpretation and recursion, and Mass Assault back to lineage-order application followed by recall.
+The caller resumes or retries with the exact returned `continuation.arguments`, including its opaque capability token. Marshmallow never reissues that capability from interaction identity alone. Answered and held responses carry source host, session, thread, chronology, and sequence lineage. The return contract explicitly sends Crucible back to interpretation and recursion, and Mass Assault back to lineage-order application followed by recall.
 
 ## Asynchronous Delegation
 
-`mousecat.delegation(action=start)` accepts one item already held by `mousecat.skill`, validates the originating capability and host-session identity, checks the tool-invocation permit and connector route, commits only safe provenance, and returns immediately with a separate caller-held capability. Independent widget interactions remain available while work runs. When an HTTP MCP deadline elapses, Mousecat sends standard `notifications/cancelled`; notification acceptance and any later response to the original request remain non-authoritative. Retry-safe `status=cancelled` requires a separately negotiated `mousecat/cancellation-ack` extension status response that correlates the request and guarantees `sideEffects=none`. Without that response, the upstream outcome remains unknown and retry requires duplicate-side-effect acknowledgement. After interpreting a completed caller-only result, `rejoin` opens one lineage-bound Crucible seam in the existing widget under an operator-interaction permit. Raw payloads and results remain memory-only.
+`mousecat.delegation(action=start)` accepts one item already held by `mousecat.skill`, validates the originating capability and host-session identity, checks the tool-invocation permit and connector route, commits only safe provenance, and returns immediately with a separate caller-held capability. Independent widget interactions remain available while work runs. When an HTTP MCP deadline elapses, Marshmallow sends standard `notifications/cancelled`; notification acceptance and any later response to the original request remain non-authoritative. Retry-safe `status=cancelled` requires a separately negotiated `mousecat/cancellation-ack` extension status response that correlates the request and guarantees `sideEffects=none`. Without that response, the upstream outcome remains unknown and retry requires duplicate-side-effect acknowledgement. After interpreting a completed caller-only result, `rejoin` opens one lineage-bound Crucible seam in the existing widget under an operator-interaction permit. Raw payloads and results remain memory-only.
 
 ## Graphical Operator Surface
 
-`node src/cli.mjs operator` starts one long-lived Mousecat runtime behind a loopback-only HTTP surface. The browser and `POST /mcp` use that same runtime. The browser presents every actionable item in one responsive, scrollable decision wall. An ordinal decision atlas maps multiple items inside their explicit source-lineage sections; a single item uses the available reading width. Cards expose the source-owned recommendation, description, source references, and response controls. Descriptions support text-only Markdown headings, paragraphs, lists and tables, plus explicit `<details>` / `<summary>` supporting sections. Tables stack into labeled rows on narrow screens. Other HTML remains literal text. Source identifiers live in an expandable section. Search spans propositions, options, and provenance; framework, session, and recall context remains available on demand from the same state engine.
+`node src/cli.mjs operator` starts one long-lived Marshmallow runtime behind a loopback-only HTTP surface. The browser and `POST /mcp` use that same runtime. The browser presents every actionable item in one responsive, scrollable decision wall. An ordinal decision atlas maps multiple items inside their explicit source-lineage sections; a single item uses the available reading width. Cards expose the source-owned recommendation, description, source references, and response controls. Descriptions support text-only Markdown headings, paragraphs, lists and tables, plus explicit `<details>` / `<summary>` supporting sections. Tables stack into labeled rows on narrow screens. Other HTML remains literal text. Source identifiers live in an expandable section. Search spans propositions, options, and provenance; framework, session, and recall context remains available on demand from the same state engine.
 
-Decision access is nonlinear. Any open or deferred item from any interaction can be opened and answered without resolving earlier items first. Operators may return one answer immediately or prepare an arbitrary local draft set across the wall. Mousecat distinguishes ready drafts from drafts that need completion, then presents the selected answers, amendments, lineage sections, evidence, and originating interaction boundaries in a review drawer before return. Ready sets use bounded requests through the existing typed per-interaction contract; earlier successful requests remain committed if a later request fails. `Later` defers the selected item while preserving its caller wait and chronology; `Hold` records an intentional terminal hold for that item. Chronology informs provenance and optional sorting; it neither creates graph edges nor governs response eligibility.
+Decision access is nonlinear. Any open or deferred item from any interaction can be opened and answered without resolving earlier items first. Operators may return one answer immediately or prepare an arbitrary local draft set across the wall. Marshmallow distinguishes ready drafts from drafts that need completion, then presents the selected answers, amendments, lineage sections, evidence, and originating interaction boundaries in a review drawer before return. Ready sets use bounded requests through the existing typed per-interaction contract; earlier successful requests remain committed if a later request fails. `Later` defers the selected item while preserving its caller wait and chronology; `Hold` records an intentional terminal hold for that item. Chronology informs provenance and optional sorting; it neither creates graph edges nor governs response eligibility.
 
-ML rulings may add a `mousecat.ml-review/1` record to the existing decision item. The open card first explains the human situation, the decision's place in the larger system, the causal path into play, the eventual player-visible consequence, and the precedent the answer sets. It then places the literal input beside the proposed learning and lists the exact approval effects, remaining exclusions, and evidence. The prepared-return review repeats that context. Mousecat validates and displays caller-owned claims without inventing an interpretation, and changing the review changes the skill invocation fingerprint.
+ML rulings may add a `mousecat.ml-review/1` record to the existing decision item. The open card first explains the human situation, the decision's place in the larger system, the causal path into play, the eventual player-visible consequence, and the precedent the answer sets. It then places the literal input beside the proposed learning and lists the exact approval effects, remaining exclusions, and evidence. The prepared-return review repeats that context. Marshmallow validates and displays caller-owned claims without inventing an interpretation, and changing the review changes the skill invocation fingerprint.
 
 ## Native Simulation Observatory
 
@@ -335,7 +352,7 @@ resume, and ended runs freeze their final timing while remaining inspectable.
 When a producer supplies durable study-session state, the primary control is
 Save session during a running attempt or Continue session after a normal save.
 Attempt duration and clean wall-time continuation remain inside Session settings.
-Mousecat validates and forwards these bounded lifecycle requests; the producer
+Marshmallow validates and forwards these bounded lifecycle requests; the producer
 owns saving, resumption and successor publication. Session operation remains
 unreviewed and has no dataset-admission control.
 
@@ -359,7 +376,7 @@ Movement uses `WASD` or the left stick, camera uses the mouse or right stick, `S
 
 ## Host Adapter Harness
 
-`node src/cli.mjs adapters` returns `mousecat.adapter.render-packets/1` for generic MCP hosts, Codex, Claude Code, JetBrains, Cursor, and CLI consumers. Every profile points to the same Mousecat-owned summoned surface. Host packets describe origin and transport; Mousecat keeps interaction presentation, sequencing, accessibility, response capture, permit checks, route planning, state meaning, and private-upstream redaction.
+`node src/cli.mjs adapters` returns `mousecat.adapter.render-packets/1` for generic MCP hosts, Codex, Claude Code, JetBrains, Cursor, and CLI consumers. Every profile points to the same Marshmallow-owned summoned surface. Host packets describe origin and transport; Marshmallow keeps interaction presentation, sequencing, accessibility, response capture, permit checks, route planning, state meaning, and private-upstream redaction.
 
 Harness authors can import the dependency-free SDK from `mousecat/sdk`. It initializes one Streamable HTTP MCP session, emits provider-neutral heartbeats, registers namespace-owned frameworks, invokes and awaits skills, and carries terminal result capabilities into contextual handoffs without reconstructing JSON-RPC envelopes.
 
@@ -382,21 +399,21 @@ const invocation = await mousecat.invokeSkill({
 const result = await mousecat.awaitSkill(invocation, { waitMs: 30000 });
 ```
 
-`runMousecatHostConformance` exercises that boundary as one reusable lifecycle: initialize transport, read runtime health, bind host identity, summon a Crucible decision, wait for its Mousecat response, inspect contextual continuation, optionally discover and execute a configured provider read, and close the host session. The returned `mousecat.sdk-host-conformance/1` receipt contains no response values or capability tokens. The packaged reference runner exposes the same proof to any shell-capable harness:
+`runMousecatHostConformance` exercises that boundary as one reusable lifecycle: initialize transport, read runtime health, bind host identity, summon a Crucible decision, wait for its Marshmallow response, inspect contextual continuation, optionally discover and execute a configured provider read, and close the host session. The returned `mousecat.sdk-host-conformance/1` receipt contains no response values or capability tokens. The packaged reference runner exposes the same proof to any shell-capable harness:
 
 ```powershell
 mousecat-conformance --profile codex --session codex-proof --thread host-thread --gitlab-read
 ```
 
-The command remains active until the operator answers its attributed decision in the standalone Mousecat surface. `--gitlab-read` is optional and proves the configured `gitlab.user.get` path through the same permit-gated runtime.
+The command remains active until the operator answers its attributed decision in the standalone Marshmallow surface. `--gitlab-read` is optional and proves the configured `gitlab.user.get` path through the same permit-gated runtime.
 
-Reference descriptors cover generic MCP, Codex, Claude Code, ChatGPT, OpenAI and Anthropic SDKs, Google GenAI and Antigravity, xAI and Grok Build, and Ollama. Unknown profile ids become custom MCP hosts. Adapter construction fixes host and session identity; per-call payloads cannot replace that identity or substitute Mousecat-issued continuation capabilities.
+Reference descriptors cover generic MCP, Codex, Claude Code, ChatGPT, OpenAI and Anthropic SDKs, Google GenAI and Antigravity, xAI and Grok Build, and Ollama. Unknown profile ids become custom MCP hosts. Adapter construction fixes host and session identity; per-call payloads cannot replace that identity or substitute Marshmallow-issued continuation capabilities.
 
 ## Private Neo Connector
 
 Copy `mousecat.config.example.json` to ignored `mousecat.config.json`, choose a known adapter descriptor or any custom host identifier, and enable `connectors.neo` only when Neo compatibility is wanted. Known descriptors cover generic MCP, Codex, Claude, ChatGPT, OpenAI and Anthropic SDKs, Google GenAI and Antigravity, xAI and Grok Build, Ollama, JetBrains, Cursor, and CLI clients. Unknown identifiers normalize through the generic MCP contract rather than being rejected.
 
-Set `state.enabled` to `true` in ignored local config when a host needs recursive dockets to survive process boundaries. Mousecat writes sessions, interactions, decision queues, route plans, public events, and credential references to `.mousecat/state.json` by default. The directory is ignored, credential values are never stored, secret-shaped fields are redacted, sensitive interactions are written without identifying metadata, prompts, options, or answers, and route-plan history is bounded by `state.maxRoutePlans`.
+Set `state.enabled` to `true` in ignored local config when a host needs recursive dockets to survive process boundaries. Marshmallow writes sessions, interactions, decision queues, route plans, public events, and credential references to `.mousecat/state.json` by default. The directory is ignored, credential values are never stored, secret-shaped fields are redacted, sensitive interactions are written without identifying metadata, prompts, options, or answers, and route-plan history is bounded by `state.maxRoutePlans`.
 
 ```powershell
 node src/cli.mjs connectors
@@ -411,7 +428,7 @@ node src/cli.mjs session total-recall
 
 Dynamic MCP discovery comes from the configured server's `tools/list` and `resources/list` responses over stdio or HTTP. Provider-neutral API and CLI integrations use source-owned `mousecat.integration-adapter/1` manifests over the distinct `cli-json` transport. Their capabilities appear through the same connector status, route, and `tools/list` surfaces; permit-gated capability execution enters only through `mousecat.invoke`, validates the active registry binding, and runs through a SHA-256-pinned executable with host-managed authentication. Integration capabilities are not delegation targets.
 
-HTTP connector summaries publish the cancellation handshake and a bounded `cancellationGraceMs` parameter from 100 through 5000 milliseconds, defaulting to 1000. `mousecat.bridge` reads the public `mousecat_bridge_contract_v1` resource and returns a sanitized summary with public routes, boundary classes, stale-runtime policy, and withheld-surface labels. If an upstream MCP endpoint reports `MCP_RUNTIME_STALE`, Mousecat returns `connector-runtime-stale` with `restartRequired: true` instead of treating it as an opaque JSON-RPC failure. `node scripts/neo-live-smoke.mjs --config mousecat.config.json` is the local live-connector smoke for an ignored private Neo config; it reports connector readiness, required public names, permit-gated forwarding, and sanitized runtime identity/doctor fields. Do not commit generated discovery output, local paths, credentials, raw runtime payloads, or private tool schemas.
+HTTP connector summaries publish the cancellation handshake and a bounded `cancellationGraceMs` parameter from 100 through 5000 milliseconds, defaulting to 1000. `mousecat.bridge` reads the public `mousecat_bridge_contract_v1` resource and returns a sanitized summary with public routes, boundary classes, stale-runtime policy, and withheld-surface labels. If an upstream MCP endpoint reports `MCP_RUNTIME_STALE`, Marshmallow returns `connector-runtime-stale` with `restartRequired: true` instead of treating it as an opaque JSON-RPC failure. `node scripts/neo-live-smoke.mjs --config mousecat.config.json` is the local live-connector smoke for an ignored private Neo config; it reports connector readiness, required public names, permit-gated forwarding, and sanitized runtime identity/doctor fields. Do not commit generated discovery output, local paths, credentials, raw runtime payloads, or private tool schemas.
 
 ## Browser verification
 
@@ -429,7 +446,7 @@ contracts and retains synthetic screenshots as test artifacts.
 
 ## Source Policy
 
-Mousecat core source is licensed under PolyForm Perimeter 1.0.0. The perimeter posture permits use, modification, and distribution under the published terms while reserving competing-product use outside the grant. Runtime transcripts, private host state, credential values, Z-Library session state, upstream caches, and generated local artifacts stay out of Git.
+Marshmallow core source is licensed under PolyForm Perimeter 1.0.0. The perimeter posture permits use, modification, and distribution under the published terms while reserving competing-product use outside the grant. Runtime transcripts, private host state, credential values, Z-Library session state, upstream caches, and generated local artifacts stay out of Git.
 
 See [third-party notices](THIRD_PARTY_NOTICES.md) for the icon and desktop dependency
 terms, and [release readiness](PUBLIC_RELEASE.md) for verification and the historical
@@ -450,7 +467,7 @@ to the same work; prepared drafts can be revised from any project view.
 
 ML review items display the situation, candidate content and response controls
 first. Supporting input, rationale and evidence expand on demand. Plan documents
-retain their reading layout. The host supplies meaning and typed choices; Mousecat
+retain their reading layout. The host supplies meaning and typed choices; Marshmallow
 owns their shared presentation and preserves the source content.
 
 Small question sets show named destinations and the currently viewed question;
@@ -466,4 +483,4 @@ known. To contextualize existing work without reissuing questions, an explicitly
 registered project surface can list up to 256 unique `interactionIds` (nonempty
 strings of at most 512 characters). Associations affect navigation, preserve
 original ownership and grant no answer authority. Calling a skill or registering
-a project does not authorize editing the Mousecat platform.
+a project does not authorize editing the Marshmallow platform.

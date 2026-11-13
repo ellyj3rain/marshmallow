@@ -18,11 +18,11 @@ internal sealed record DesktopSettings(string RepositoryRoot, string NodePath, s
             || !Path.IsPathFullyQualified(value.NodePath) || !Path.IsPathFullyQualified(value.ConfigPath)
             || !File.Exists(value.NodePath) || !File.Exists(value.ConfigPath)
             || !File.Exists(Path.Combine(value.RepositoryRoot, "src", "cli.mjs")))
-            throw new InvalidDataException("The Mousecat installation paths are unavailable. Run the desktop installer again.");
+            throw new InvalidDataException("The Marshmallow installation paths are unavailable. Run the desktop installer again.");
         using var config = JsonDocument.Parse(File.ReadAllText(value.ConfigPath).TrimStart('\uFEFF'));
         if (!config.RootElement.TryGetProperty("state", out var state)
             || !state.TryGetProperty("enabled", out var enabled) || enabled.ValueKind != JsonValueKind.True)
-            throw new InvalidDataException("Enable local state in the selected Mousecat configuration to retain questions.");
+            throw new InvalidDataException("Enable local state in the selected Marshmallow configuration to retain questions.");
         var statePath = state.TryGetProperty("path", out var stateFile) ? stateFile.GetString() : ".mousecat/state.json";
         if (string.IsNullOrWhiteSpace(statePath)) throw new InvalidDataException("Local state needs a file path.");
         return value with { StatePath = Path.GetFullPath(statePath, value.RepositoryRoot) };

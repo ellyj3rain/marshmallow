@@ -1,27 +1,27 @@
-| Document | Mousecat Core |
+| Document | Marshmallow Core |
 |---|---|
-| Version | 2.2.0.0-alpha |
-| Timestamp | 2026-10-04 00:15 UTC / 17:15 PST |
+| Version | 2.2.0.1-alpha |
+| Timestamp | 2026-11-12 23:27 UTC / 15:27 PST |
 | Status | ACTIVE - project identity. |
 
-# Mousecat Core
+# Marshmallow Core
 
-Mousecat is a host-facing MCP normalization plane, nonlinear operator surface, native project world, and source-available bridge. It lets models in different harnesses request shared operator interactions, receive structured responses, mediate upstream capabilities, and work against a project's real model through source-bound development representations without bundling private implementations.
+Marshmallow is a host-facing MCP normalization plane, nonlinear operator surface, native project world, and source-available bridge. It lets models in different harnesses request shared operator interactions, receive structured responses, mediate upstream capabilities, and work against a project's real model through source-bound development representations without bundling private implementations.
 
-Mousecat's product goal is a visual paradise for humans and agents: a rich,
+Marshmallow's product goal is a visual paradise for humans and agents: a rich,
 interactive environment where people can see structure, follow continuity,
 explore possibilities and work directly with their subjects. Spatial graphs,
 maps, imagery, motion, timelines and contextual detail are first-class means of
 understanding. Each representation suits its subject and the person's task;
 human interpretation and machine access share stable identities, explicit
-relationships and source evidence. Mousecat owns the quality of this visual
+relationships and source evidence. Marshmallow owns the quality of this visual
 experience as a platform responsibility.
 
 ## Identity
 
-Mousecat is the organ between AI or agent hosts and the operator's tool ecosystem. A host sees one MCP server, one namespace, one cross-session graphical decision surface, and one configuration surface. Mousecat owns mapped-seam normalization, interaction navigation, response capture, redaction, provenance, routing facts, and connector mediation. The calling model owns recall, semantic seam mapping, option compilation, interpretation, recursion, and the next action.
+Marshmallow is the organ between AI or agent hosts and the operator's tool ecosystem. A host sees one MCP server, one namespace, one cross-session graphical decision surface, and one configuration surface. Marshmallow owns mapped-seam normalization, interaction navigation, response capture, redaction, provenance, routing facts, and connector mediation. The calling model owns recall, semantic seam mapping, option compilation, interpretation, recursion, and the next action.
 
-Mousecat does not ship private Neo tools or Ground Zero internal implementation knowledge. It ships the public connection layer: local configuration can point Mousecat at a private Neo MCP endpoint, Mousecat can discover that endpoint's tools dynamically, and permitted invocations can be forwarded at runtime.
+Marshmallow does not ship private Neo tools or Ground Zero internal implementation knowledge. It ships the public connection layer: local configuration can point Marshmallow at a private Neo MCP endpoint, Marshmallow can discover that endpoint's tools dynamically, and permitted invocations can be forwarded at runtime.
 
 ## Audience
 
@@ -29,9 +29,9 @@ Each operator owns a personal workspace shared by their connected agents.
 Desktop and browser are access paths to the same questions, plans, decisions and
 history. Work remains available independently of the agent that brought it in.
 Projects and skill frameworks provide their context through shared contracts;
-Mousecat's platform identity and navigation remain its own.
+Marshmallow's platform identity and navigation remain its own.
 
-Mousecat is for operators and builders using AI coding hosts such as JetBrains, Claude Code, Codex, Cursor, and command-line workflows. Its first value is making powerful workflows visible and governable while the user is actively working.
+Marshmallow is for operators and builders using AI coding hosts such as JetBrains, Claude Code, Codex, Cursor, and command-line workflows. Its first value is making powerful workflows visible and governable while the user is actively working.
 
 ## First Components
 
