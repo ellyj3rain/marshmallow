@@ -684,7 +684,7 @@ export async function selfTestOperatorServer(options = {}) {
     const status = runtime.status();
     return {
       schema: "mousecat.operator-self-test/1",
-      ok: pageResponse.ok && snapshotResponse.ok && page.includes("Mousecat") && snapshot.status?.ok === true,
+      ok: pageResponse.ok && snapshotResponse.ok && page.includes("<title>Marshmallow</title>") && snapshot.status?.ok === true,
       checks: {
         page: pageResponse.status,
         snapshot: snapshotResponse.status,

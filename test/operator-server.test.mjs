@@ -241,7 +241,7 @@ test("operator server serves the graphical shell and redacted runtime snapshot",
   const snapshot = JSON.parse(snapshotText);
 
   assert.equal(pageResponse.status, 200);
-  assert.match(page, /<title>Mousecat<\/title>/);
+  assert.match(page, /<title>Marshmallow<\/title>/);
   assert.match(pageResponse.headers.get("content-security-policy"), /default-src 'self'/);
   assert.equal(pageResponse.headers.get("access-control-allow-origin"), null);
   assert.equal(scriptResponse.status, 200);
