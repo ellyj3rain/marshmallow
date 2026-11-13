@@ -64,6 +64,6 @@ Marshmallow must expose Crucible, Mass Assault, and Total Recall as callable ato
 Using Marshmallow, invoking its skills, registering a project or presenting questions
 uses the existing shared platform contract. It does not authorize modifying Marshmallow
 source, shared layouts or skill semantics. Platform changes require an explicit
-human request to alter Mousecat. Within that scope, improvements belong in the
+human request to alter Marshmallow. Within that scope, improvements belong in the
 shared source-owned platform; consumer-specific behavior stays in declared data
 and project adapters.
