@@ -2626,3 +2626,17 @@ single PR retains A27/A28 chronology and requires protected checks before merge.
 Neo maintains current capability and README assessment from ordinary operator feedback, repairs and retained results. This maintenance corrects active playtest/acceptance copy within the existing project; published product chronology and versions remain unchanged. Checks cover the owned text diff, applicable syntax, current source links and tracked Word twins. The operator plays the aggregate build; completed mechanics have no standing one-to-one acceptance queue.
 
 The actual correction PR exposed a blanket chronology refusal behind independent dependency PRs. The existing chronology owner now uses complete current/predecessor file sets for bounded record maintenance; product FIFO and overlapping/missing coverage refusals remain. Eleven focused controls pass.
+
+
+## [MAINTENANCE] | 2026-11-12 | Public dependency receiving for PR 18
+
+Playwright 1.63.0 to 1.64.0 updates the browser verification dependency. Source review confirms only the declared package and locked Playwright/core versions change. The refreshed hosted run passed runtime and browser contracts; its documentation gate identified the missing maintenance companion, supplied here. All hosted required checks remain the merge condition.
+
+This receives the dependency through the existing public readiness and security checks. The product scope and root odometer remain owned by the release; this supporting dependency record claims no separate feature completion or additional release credit.
+
+
+## [MAINTENANCE] | 2026-11-12 | Public dependency receiving for PR 19
+
+Lucide 1.24.0 to 1.55.0 updates the existing icon dependency without changing the application API. The source and lockfile delta is limited to that dependency. The branch receives the current main and this documentation companion; the current hosted runtime, browser, governance and security results determine merge readiness. An older cancellation-test timing failure is not treated as evidence about this refreshed source.
+
+This receives the dependency through the existing public readiness and security checks. The product scope and root odometer remain owned by the release; this supporting dependency record claims no separate feature completion or additional release credit.
