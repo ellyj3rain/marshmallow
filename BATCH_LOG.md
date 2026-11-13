@@ -2640,3 +2640,10 @@ This receives the dependency through the existing public readiness and security 
 Lucide 1.24.0 to 1.55.0 updates the existing icon dependency without changing the application API. The source and lockfile delta is limited to that dependency. The branch receives the current main and this documentation companion; the current hosted runtime, browser, governance and security results determine merge readiness. An older cancellation-test timing failure is not treated as evidence about this refreshed source.
 
 This receives the dependency through the existing public readiness and security checks. The product scope and root odometer remain owned by the release; this supporting dependency record claims no separate feature completion or additional release credit.
+
+
+## [MAINTENANCE] | 2026-11-12 | Public dependency receiving for PR 23
+
+CodeQL Action 4.37.4 to 4.39.3 updates the existing hosted source scanner. Only the two CodeQL setup/analyze action references change in the workflow. Repository permissions and the scan target remain unchanged. Current main and this maintenance record are received before the required hosted checks determine readiness.
+
+This receives the dependency through the existing public readiness and security checks. The product scope and root odometer remain owned by the release; this supporting dependency record claims no separate feature completion or additional release credit.
